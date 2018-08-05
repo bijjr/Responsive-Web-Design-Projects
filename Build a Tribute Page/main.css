@@ -1,0 +1,39 @@
+<style>
+
+#main {
+  background-color: lightgray;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin:auto;
+}
+
+#img-div {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img {
+
+}
+
+#img-caption {
+
+}
+
+#main .listlinks a{
+  font-size: 13px;
+  font-style: italic;
+  color: pink;
+}
+
+
+</style>
