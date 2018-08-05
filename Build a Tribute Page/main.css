@@ -21,25 +21,24 @@
 }
 
 #img-div {
-  background-color: white;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
   margin: 15px;
 }
 
-#img {
-  display: flex;
+#image {
+  display: block;
   margin: auto;
-  flex-shrink: 10;
-  width: 550px;
-  height: 300px;
+  max-width: 100%;
   box-shadow: 0 10px 20px gray;
 }
 
 @media (max-width: 650px) {
-    img {
+    #image {
       max-width: 100%;
       display: block;
     }
@@ -66,7 +65,7 @@
   }
 }
 
-img:hover {
+#image:hover {
   transform: scale(1.01);
 }
 
