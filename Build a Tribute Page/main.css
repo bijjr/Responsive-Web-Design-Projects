@@ -1,10 +1,9 @@
-<style>
 
 #main {
   background-color: lightgray;
 }
 
-#title {
+ #title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,19 +12,57 @@
   margin:auto;
 }
 
-#img-div {
-  background-color: red;
+#title-caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+
+#img-div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 }
 
 #img {
-
+  display: flex;
+  flex-shrink: 10;
+  width: 550px;
+  height: 300px;
 }
 
 #img-caption {
+  font-style: bold;
+}
+
+#tribute-info {
+  display: block;
+  margin: auto;
+  width: 600px;
+}
+
+#tribute-info h3 {
+  display: block;
+  width: 550px;
+  margin:auto;
+}
+
+#tribute-info p {
+  padding: 2px 4px;
+  display: inline-block;
+  color: lightgray;
+  border: solid;
+  border-radius: 8px;
+  background-color: green
+}
+
+#tribute-info i {
 
 }
 
@@ -33,7 +70,5 @@
   font-size: 13px;
   font-style: italic;
   color: pink;
-}
 
-
-</style>
+} */
