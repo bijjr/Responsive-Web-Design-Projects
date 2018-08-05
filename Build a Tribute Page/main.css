@@ -1,15 +1,14 @@
-
 #main {
-  background-color: lightgray;
+  background-color: white;
+  font-family: 'Karla';
 }
 
  #title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  margin:auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
 }
 
 #title-caption {
@@ -32,17 +31,52 @@
 
 #img {
   display: flex;
+  margin: auto;
   flex-shrink: 10;
   width: 550px;
   height: 300px;
+  box-shadow: 0 10px 20px gray;
 }
 
-#img-caption {
-  font-style: bold;
+@media (max-width: 650px) {
+    img {
+      max-width: 100%;
+      display: block;
+    }
+}
+
+@media (max-width: 550px) {
+  #tribute-info {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  #tribute-info h3{
+    max-width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+   #title {
+     color: red;
+     width: 100%;
+  }
+}
+
+img:hover {
+  transform: scale(1.01);
+}
+
+#listlinks:hover {
+  color: red;
 }
 
 #tribute-info {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: auto;
   width: 600px;
 }
@@ -56,19 +90,44 @@
 #tribute-info p {
   padding: 2px 4px;
   display: inline-block;
-  color: lightgray;
+  color: white;
   border: solid;
   border-radius: 8px;
-  background-color: green
+  background-color: green;
+  box-shadow: 0 5px 20px lightgray;
+}
+
+#tribute-info p:hover {
+  font-size: 17px;
 }
 
 #tribute-info i {
 
 }
 
-#main .listlinks a{
+#main  a{
   font-size: 13px;
   font-style: italic;
-  color: pink;
+    font-style: bold;
+  color: grey;
 
-} */
+}
+
+li {
+  margin: auto;
+  display: inline-block;
+  border: 2px solid;
+  border-color: white;
+  box-shadow: 0 5px 10px lightgray;
+}
+
+li:hover{
+  transform: scale(1.1);
+}
+
+#main a:hover{
+  font-size: 13px;
+  font-style: italic;
+  color: red;
+
+}
