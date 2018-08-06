@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Karla:400,700' type="text/css">
+    <title> Survey Form Page</title>
+  </head>
+  <body>
+     <h1 id="title">Survey form</h1>
+
+     <form id="survey-form" action="index.html" method="post">
+
+       <p id="description">Rate your experience</p>
+
+       <label id="name-label" for="name">Name</label>
+       <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+       <label for="age">Age</label>
+       <input type="number" min="1" max="2">
+
+       <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Number</label>
+        <input id="number" type="number" placeholder="Enter your number" min="10" max="13"required>
+
+        <div class="">
+          Which option best describes your current role?
+        </div>
+        <select id="dropdown" name="">
+          <option value="Student">Student</option>
+          <option value="FTJ">Full time job</option>
+          <option value="FTL">Full time learner</option>
+          <option value="PNTS">Prefer not to say</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <div class="">
+           How likely is that you would recommend freeCodeCamp to a friend?
+        </div>
+
+        <div class="recommend">
+          <input type="radio" name="recommendation" value="Definitely" />
+            <label for="Definitely">Definitely</label>
+            <br>
+            <input type="radio" name="recommendation" value="Maybe" />
+              <label for="Maybe">Maybe</label>
+              <br>
+              <input type="radio" name="recommendation" value="Not sure"checked />
+              <label for="Not sure"> Not sure</label>
+        </div>
+
+        <div class="">
+          What do you like most in FCC:
+        </div>
+        <select id="dropdown" name="">
+          <option value="Challenges">Challenges</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+          <option value="Projects">Projects</option>
+        </select>
+
+        <div class="">
+          Things that should be improved in the future
+(Check all that apply):
+        </div>
+        <div class="Improvements">
+          <input type="checkbox" name="" value="front end">
+          <label for="front end">Front end Projects</label>
+          <br>
+          <input type="checkbox" name="" value="back end">
+          <label for="back end">Back end Projects</label>
+          <br>
+          <input type="checkbox" name="" value="data viz">
+          <label for="data viz">Data Visualization</label>
+          <br>
+          <input type="checkbox" name="" value="chall">
+          <label for="chall">Challenges</label>
+          <br>
+          <input type="checkbox" name="" value="oscom">
+          <label for="oscom">Open Source Community</label>
+          <br>
+          <input type="checkbox" name="" value="glitter">
+          <label for="glitter">Gitter help rooms</label>
+          <br>
+          <input type="checkbox" name="" value="vids">
+          <label for="vids">Videos</label>
+          <br>
+          <input type="checkbox" name="" value="meetups">
+          <label for="meetups">City Meetups</label>
+          <br>
+          <input type="checkbox" name="" value="wiki">
+          <label for="wiki">Wiki</label>
+          <br>
+          <input type="checkbox" name="" value="forum">
+          <label for="forum">Forum</label>
+          <br>
+          <input type="checkbox" name="" value="courses">
+          <label for="courses">Additional Courses</label>
+        </div>
+
+
+        <div class="comments">
+            Any Comments or Suggestions?
+        <textarea name="name" rows="8" cols="80"></textarea>
+        </div>
+        <br>
+       <button id="submit" type="submit" name="button">Submit</button>
+
+     </form>
+  </body>
+</html>
