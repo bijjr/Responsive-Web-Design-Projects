@@ -14,22 +14,22 @@
 
        <p id="description">Rate your experience</p>
 
-       <label id="name-label" for="name">Name</label>
-       <input id="name" type="text" name="name" placeholder="Enter your name" required>
+       <label class="label" id="name-label" for="name">Name</label>
+       <input class="rightside" id="name" type="text" name="name" placeholder="Enter your name" required>
 
-       <label for="age">Age</label>
-       <input type="number" min="1" max="2">
+       <label class="label" for="age">Age</label>
+       <input class="rightside" type="number" min="1" max="99">
 
-       <label id="email-label" for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
+       <label class="label" id="email-label" for="email">Email</label>
+        <input class="rightside" id="email" type="email" placeholder="Enter your email" required>
 
-        <label id="number-label" for="number">Number</label>
-        <input id="number" type="number" placeholder="Enter your number" min="10" max="13"required>
+        <label class="label" id="number-label" for="number">Number</label>
+        <input class="rightside" id="number" type="number" placeholder="281-330-8004" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" min="1" max="2" minlength="9" maxlength="14" required>
 
-        <div class="">
+       <label class="label" for="dropdown">
           Which option best describes your current role?
-        </div>
-        <select id="dropdown" name="">
+       </label>
+        <select class="rightside" id="dropdown" name="">
           <option value="Student">Student</option>
           <option value="FTJ">Full time job</option>
           <option value="FTL">Full time learner</option>
@@ -37,11 +37,10 @@
           <option value="Other">Other</option>
         </select>
 
-        <div class="">
+        <label class="label" for="recommend">
            How likely is that you would recommend freeCodeCamp to a friend?
-        </div>
-
-        <div class="recommend">
+        </label>
+        <div class="rightside">
           <input type="radio" name="recommendation" value="Definitely" />
             <label for="Definitely">Definitely</label>
             <br>
@@ -52,21 +51,21 @@
               <label for="Not sure"> Not sure</label>
         </div>
 
-        <div class="">
+        <div class="label">
           What do you like most in FCC:
         </div>
-        <select id="dropdown" name="">
+        <select class="rightside" id="dropdown" name="">
           <option value="Challenges">Challenges</option>
           <option value="Community">Community</option>
           <option value="Open Source">Open Source</option>
           <option value="Projects">Projects</option>
         </select>
 
-        <div class="">
+        <div class="label">
           Things that should be improved in the future
 (Check all that apply):
         </div>
-        <div class="Improvements">
+        <div class="rightside">
           <input type="checkbox" name="" value="front end">
           <label for="front end">Front end Projects</label>
           <br>
@@ -102,8 +101,8 @@
         </div>
 
 
-       <label for="comments">Any Comments or Suggestions?</label>
-        <textarea name="comments" rows="8" cols="80"></textarea>
+       <label class="label" id="comment-label" for="comments">Any Comments or Suggestions?</label>
+        <textarea class = "rightside" name="comments" rows="8" cols="80"></textarea>
 
         <br>
        <button id="submit" type="submit" name="button">Submit</button>

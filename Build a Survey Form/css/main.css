@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: pink;
+  color: white;
   display: flex;
   margin: auto;
   margin-bottom: 10px;
@@ -15,31 +15,59 @@ h1 {
 }
 
 form {
-  background-color: white;
+  background: linear-gradient(55deg,#CCFFFF,#FFCCCC);
+  margin: auto;
   box-shadow: 0 10px 20px black;
-  display: grid;
-  grid-template-areas:
-      "description"
-      "column1 column2"
-      "submit";
+  padding: 35px;
+  width: 80%;
+  max-width: 80%;
 }
 
+
+.label {
+  display: inline-block;
+  text-align: right;
+  width: 45%;
+  max-width: 60%;
+  padding: 5px;
+  margin-top: 10px;
+  color: white;
+}
+
+.rightside {
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+  max-width: 60%;
+  vertical-align: middle;
+  margin: 5px;
+  color: white;
+
+}
 
 #description {
-  grid-area: description;
-  display: inline-block;
-}
-
-label {
-  grid-area: column1;
-}
-
-
-
-input {
-  grid-area: column2;
+color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
 }
 
 input {
   margin: 5px;
+  box-shadow: 0 1px 2px black;
+}
+
+
+#submit {
+  background-color: pink;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin-top: 10px;
+  margin-left:40%;
+  border: 0px solid;
+  box-shadow: 0 1px 2px black;
 }
