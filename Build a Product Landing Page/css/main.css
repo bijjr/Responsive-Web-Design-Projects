@@ -7,19 +7,27 @@ body {
 
 header {
   background: #BC71D8;
-position: absolute;
+position: fixed;
 width: 100%;
 top: 0;
 display: flex;
- justify-content: space-around;
+ justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#vid-sec {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
 #header-img {
   display: inline-block;
-  height: 90px;
-  width: 165px;
+  height: 85px;
+  width: 155px;
+  background: red;
 }
 
 nav {
@@ -29,6 +37,28 @@ nav {
   text-align: right;
   padding-bottom: 10px;
 }
+
+@media (max-width: 600px){
+  header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  nav {
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 600px){
+  nav  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: red;
+  }
+} */
 
 nav a {
   color: #A6D7DE;
@@ -62,6 +92,10 @@ input[type="submit"] {
     height: 30px;
     margin: 15px 0;
     border: 0;
+}
+
+id {
+  background: white;
 }
 
 #submit {
