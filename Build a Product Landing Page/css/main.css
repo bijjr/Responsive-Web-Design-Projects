@@ -99,12 +99,45 @@ input[type="submit"] {
     box-shadow: 0 5px 10px black;
 }
 
-id {
-  background: white;
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background-color: red;
 }
 
+#pricing {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  text-align: center;
+  height: 250px;
+  background-color: red;
+  column-count: 3;
+  column-gap: 20px;
+}
 
+#how {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+  background-color: red;
+}
 
-h1 {
-  color: red;
+#footer {
+  background-color: red;
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+}
+
+id {
+  background: white;
 }
