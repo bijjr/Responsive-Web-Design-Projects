@@ -1,5 +1,5 @@
 body {
-/*   background-color: #CEA52C; */
+  background-color: #EAEDF3;
   font-family: 'Karla';
   margin-top: 160px;
 }
@@ -68,7 +68,8 @@ nav a {
 }
 
 section {
-/*   background-color: white; */
+  background-color: white;
+  border-radius: 10px;
   padding: 20px;
 /*   border: 3px solid #A6D7DE; */
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
@@ -163,7 +164,7 @@ input[type="submit"] {
 }
 .pricetab {
 /*   border: 5px solid lightgray; */
-  background-color: lightgray;
+  background-color: #EAEDF3;
   padding: 10px;
   width: 100%;
   margin-top: -10px;
@@ -213,7 +214,7 @@ input[type="submit"] {
 }
 
 footer {
-/*   background-color: lightgray; */
+  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -221,6 +222,7 @@ footer {
   align-items: center;
 /*   width: 500px; */
   margin: auto;
+  margin-bottom: 25px;
   max-width: 50%;
  border-radius: 20px;
   /*margin-right: 250px;
