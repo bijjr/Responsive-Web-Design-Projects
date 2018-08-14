@@ -156,12 +156,17 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+/*   border: 3px solid black; */
+  margin: auto;
+  width: 94%;
 }
 
 #headprice {
   text-align: center;
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
             0 5px 15px 0 rgba(0,0,0,0.08);
+/*     border: 3px solid black; */
+/* background-color: red; */
 }
 
   @media (max-width: 850px) { #pricing {
@@ -200,11 +205,11 @@ input[type="submit"] {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 25px;
+  margin: 5px;
   padding: 10px;
   border: 3px solid black;
   border-radius: 10px;
-  max-width: 120%;
+
 }
 
 #how {
@@ -260,7 +265,7 @@ span {
 }
 
 section {
-  margin: 10%;
+  margin: 5%;
 }
 
 .btn {
